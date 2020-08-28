@@ -1,0 +1,83 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <!-- displays site properly based on user's device -->
+
+    <link rel="icon" type="image/png" sizes="32x32" href="src/images/favicon-32x32.png" />
+    <link rel="stylesheet" type="text/css" href="dist/styles/index.css" />
+
+    <title>Frontend Mentor | Coding Bootcamp Testimonials Slider</title>
+  </head>
+  <body>
+    <main class="wrapper">
+      <img class="pattern-curve" src="src/images/pattern-curve.svg" alt="light-purple curve" />
+      <div class="slider">
+        <div class="slider_content">
+          <div class="slide_portrait">
+            <img
+              class="slide_portrait-image active"
+              src="src/images/image-tanya.jpg"
+              alt="Tanya Sinclair"
+              id="slide_img1"
+            />
+            <img
+              class="slide_portrait-image"
+              src="src/images/image-john.jpg"
+              alt="John Tarkpor"
+              id="slide_img2"
+            />
+            <div class="slide_controls">
+              <button id="slide-back">
+                <img src="src/images/icon-prev.svg" alt="arrow back" />
+              </button>
+              <button id="slide-next">
+                <img src="src/images/icon-next.svg" alt="arrow next" />
+              </button>
+            </div>
+          </div>
+          <img class="slide_portrait-background" src="src/images/pattern-bg.svg" alt="shapes" />
+        </div>
+        <div class="slider_placeholder"></div>
+        <div class="slide_testimonial active">
+          <div class="testimonial_content">
+            <p class="testimonial_text">
+              “ I’ve been interested in coding for a while but never taken the jump, until now. I
+              couldn’t recommend this course enough. I’m now in the job of my dreams and so excited
+              about the future. ”
+            </p>
+            <img class="testimonial_icon" src="src/images/pattern-quotes.svg" alt="quotes icon" />
+            <div class="testimonial_credits">
+              <span class="testimonial_author">Tanya Sinclair</span>
+              <span class="testimonial_job">UX Engineer</span>
+            </div>
+          </div>
+          </div>
+        <div class="slide_testimonial">
+          <div class="testimonial_content">
+            <img class="testimonial_icon" src="src/images/pattern-quotes.svg" alt="quotes icon" />
+            <p class="testimonial_text">
+              “ If you want to lay the best foundation possible I’d recommend taking this course. The
+              depth the instructors go into is incredible. I now feel so confident about starting up
+              as a professional developer. ”
+            </p>
+            <div class="testimonial_credits">
+              <span class="testimonial_author">John Tarkpor</span>
+              <span class="testimonial_job">Junior Front-end Developer</span>
+            </div>
+          </div>
+        </div>
+      </div>
+      <div class="attribution">
+        <span
+          >Challenge by
+          <a href="https://www.frontendmentor.io?ref=challenge" target="_blank">Frontend Mentor</a
+          >.</span
+        >
+        <span>Coded by <a href="https://github.com/ann-dev" target="_blank">ann-dev</a>.</span>
+      </div>
+    </main>
+    <script src="src/slider.js"></script>
+  </body>
+</html>

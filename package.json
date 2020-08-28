@@ -1,0 +1,40 @@
+{
+  "name": "testimonials-slider",
+  "version": "1.0.0",
+  "description": "Testimonials slider, part of frontendmentor challenge series",
+  "main": "index.js",
+  "scripts": {
+    "build:scss": "node-sass --output-style compressed -o dist/styles src/styles",
+    "start": "browser-sync -s -f './index.html, dist/**/*, src/**/*'",
+    "watch:scss": "onchange -i -v 'src/styles/**/*' -- npm run build:scss"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/ann-dev/frontend-mentor-challenges.git"
+  },
+  "keywords": [
+    "slider",
+    "component"
+  ],
+  "author": "ann-dev",
+  "license": "MIT",
+  "bugs": {
+    "url": "https://github.com/ann-dev/frontend-mentor-challenges/issues"
+  },
+  "homepage": "https://github.com/ann-dev/frontend-mentor-challenges#readme",
+  "dependencies": {},
+  "devDependencies": {
+    "browser-sync": "^2.26.12",
+    "eslint": "^7.2.0",
+    "eslint-config-airbnb": "^18.2.0",
+    "eslint-config-prettier": "^6.11.0",
+    "eslint-plugin-import": "^2.22.0",
+    "eslint-plugin-jsx-a11y": "^6.3.1",
+    "eslint-plugin-prettier": "^3.1.4",
+    "eslint-plugin-react": "^7.20.5",
+    "eslint-plugin-react-hooks": "^4.0.0",
+    "node-sass": "^4.14.1",
+    "onchange": "^7.0.2",
+    "prettier": "^2.0.5"
+  }
+}

@@ -1,0 +1,19 @@
+@import 'layout';
+
+body {
+    color: $dark-blue;
+    font-family: $font-main;
+    font-size: $font-size_main;
+    -moz-osx-font-smoothing: grayscale;
+    -webkit-font-smoothing: antialiased;
+    min-width: 375px;
+}
+
+.testimonial_job {
+    color: $grayish-blue;
+}
+
+.active {
+    height: auto;
+    opacity: 1;
+}

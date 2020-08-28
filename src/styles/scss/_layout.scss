@@ -1,0 +1,61 @@
+@import 'variables';
+@import 'components/slider';
+@import 'components/testimonials';
+
+.wrapper {
+    display: flex;
+    flex-flow: column nowrap;
+    height: 100%;
+    min-height: 100vh;
+    overflow-y: hidden;
+    position: relative;
+    text-align: center;
+    width: 100%;
+}
+
+.pattern-curve {
+    bottom: -5px;
+    left: -30px;
+    position: absolute;
+    z-index: -1;
+    @include phone-landscape {
+        width: 34%;
+    }
+    @include desktop {
+        bottom: 0;
+        left: 0;
+    }
+}
+
+.attribution {
+    bottom: 10px;
+    font-size: 0.85rem;
+    margin-bottom: 2em;
+    margin-top: auto;
+    @include phone_landscape {
+        display: none;
+    }
+    span {
+        display: block;
+    }
+    @include tablet_portrait {
+        font-size: 1rem;
+        line-height: 1.3rem;
+    }
+    @include tablet_landscape {
+        font-size: 0.9rem;
+        margin-left: 2em;
+        text-align: left;
+    }
+    @include desktop {
+        font-size: 1rem;
+        margin-left: 3em;
+        text-align: left;
+    }
+    a {
+        transition: color .2s ease-in;
+    }
+    a:hover {
+        color: blueviolet;
+    }
+}

@@ -1,0 +1,214 @@
+@import "../mixins";
+
+.slider {
+  margin: auto;
+}
+
+.slider_content {
+  margin-top: 3.3rem;
+  position: relative;
+  @include desktop {
+    margin: 0;
+  }
+}
+
+.slide_portrait {
+  font-size: 0;
+  left: calc((100vw - 16rem) / 2);
+  width: 16rem;
+  position: absolute;
+  &::before {
+    box-shadow: 0 37px 41px -15px #c5c3d8;
+    content: "";
+    mix-blend-mode: multiply;
+    position: absolute;
+    top: 0;
+    right: 0;
+    left: 0;
+    bottom: 0;
+    width: 16rem;
+    @include tablet_portrait {
+      width: 22rem;
+    }
+    @include tablet_landscape {
+      width: 22rem;
+    }
+    @include desktop {
+      border-radius: 5px;
+      box-shadow: 0 37px 41px -15px #c5c3d8;
+      left: .65rem;
+      width: 33.75rem;
+    }
+  }
+  @include phone_landscape {
+    display: inline-block;
+    left: auto;
+    margin-top: 0;
+    width: 16rem;
+  }
+  @include tablet_portrait {
+    left: calc((100vw - 22rem) / 2);
+    margin: 6rem auto 0;
+    width: 22rem;
+  }
+  @include tablet_landscape {
+    display: inline-block;
+    left: 55%;
+    margin-top: 15%;
+    width: 22rem;
+  }
+  @include desktop {
+    display: inline-block;
+    left: 37rem;
+    top: 2.6rem;
+    width: 35rem;
+  }
+}
+
+.slide_controls {
+  bottom: -1.2rem;
+  position: absolute;
+  width: 100%;
+  @include phone_landscape {
+    left: 2rem;
+    text-align: left;
+  }
+  @include tablet_landscape {
+    left: 2.5rem;
+    text-align: left;
+  }
+  @include desktop {
+    bottom: -1.7rem;
+    left: 4.2rem;
+    text-align: left;
+  }
+  button {
+    -webkit-appearance: none;
+    -moz-appearance: none;
+    background-color: white;
+    border: none;
+    display: inline-block;
+    margin: 0;
+    padding-bottom: .75rem;
+    padding-top: .75rem;
+    img {
+      width: 75%;
+    }
+    @include tablet_portrait {
+      padding-bottom: 1rem;
+      padding-top: 1rem;
+      img {
+        width: 90%;
+      }
+    }
+    @include tablet_landscape {
+      padding-bottom: 1rem;
+      padding-top: 1rem;
+      img {
+        width: 90%;
+      }
+    }
+    @include desktop {
+      padding-bottom: 1.1rem;
+      padding-top: 1.1rem;
+      img {
+        width: 100%;
+      }
+    }
+    &:hover {
+      cursor: pointer;
+    }
+  }
+}
+
+#slide-back {
+  border-bottom-left-radius: 30px;
+  border-top-left-radius: 30px;
+  padding-left: .8rem;
+  padding-right: .9rem;
+  @include tablet_portrait {
+    padding-left: 1rem;
+    padding-right: 1.2rem;
+  }
+  @include tablet_landscape {
+    padding-left: 1rem;
+    padding-right: 1.2rem;
+  }
+  @include desktop {
+    padding-left: 1.3rem;
+    padding-right: 1.5rem;
+  }
+}
+
+#slide-next {
+  border-bottom-right-radius: 30px;
+  border-top-right-radius: 30px;
+  padding-left: .9rem;
+  padding-right: .8rem;
+  @include tablet_portrait {
+    padding-left: 1.2rem;
+    padding-right: 1rem;
+  }
+  @include tablet_landscape {
+    padding-left: 1.2rem;
+    padding-right: 1rem;
+  }
+  @include desktop {
+    padding-left: 1.5rem;
+    padding-right: 1.3rem;
+  }
+}
+
+.slide_portrait-image {
+  border-radius: 5px;
+  height: 0;
+  opacity: 0;
+  overflow: hidden;
+  transition: opacity 1s ease-out;
+}
+
+.slide_portrait-background {
+  position: absolute;
+  left: calc((100vw - 21rem) / 2);
+  top: -2rem;
+  width: 21rem;
+  z-index: -1;
+  @include phone_landscape {
+    left: 45%;
+  }
+  @include tablet_portrait {
+    left: calc((100vw - 29rem) / 2);
+    top: 3rem;
+    width: 29rem;
+  }
+  @include tablet_landscape {
+    left: 18rem;
+    margin: 0 auto;
+    top: 7rem;
+    right: -12rem;
+    width: 29rem;
+  }
+  @include desktop {
+    left: 33rem;
+    top: -1.8rem;
+    width: 44rem;
+  }
+}
+
+.slider_placeholder {
+  height: 19rem;
+  width: 16rem;
+  @include phone_landscape {
+    display: none;
+  }
+  @include tablet_portrait {
+    height: 33rem;
+    width: 29rem;
+  }
+  @include tablet_landscape {
+    display: none;
+  }
+  @include desktop {
+    height: 12rem;
+  }
+}
