@@ -1,16 +1,17 @@
-@import 'layout';
+@use 'layout';
+@use "variables";
 
 body {
-    color: $dark-blue;
-    font-family: $font-main;
-    font-size: $font-size_main;
+    color: variables.$dark-blue;
+    font-family: variables.$font-main;
+    font-size: variables.$font-size_main;
     -moz-osx-font-smoothing: grayscale;
     -webkit-font-smoothing: antialiased;
     min-width: 375px;
 }
 
 .testimonial_job {
-    color: $grayish-blue;
+    color: variables.$grayish-blue;
 }
 
 .active {

@@ -1,6 +1,7 @@
-@import 'variables';
-@import 'components/slider';
-@import 'components/testimonials';
+@use 'variables';
+@use 'components/slider';
+@use 'components/testimonials';
+@use "mixins";
 
 .wrapper {
     display: flex;
@@ -18,10 +19,10 @@
     left: -30px;
     position: absolute;
     z-index: -1;
-    @include phone-landscape {
+    @include mixins.phone-landscape {
         width: 34%;
     }
-    @include desktop {
+    @include mixins.desktop {
         bottom: 0;
         left: 0;
     }
@@ -32,22 +33,22 @@
     font-size: 0.85rem;
     margin-bottom: 2em;
     margin-top: auto;
-    @include phone_landscape {
+    @include mixins.phone_landscape {
         display: none;
     }
     span {
         display: block;
     }
-    @include tablet_portrait {
+    @include mixins.tablet_portrait {
         font-size: 1rem;
         line-height: 1.3rem;
     }
-    @include tablet_landscape {
+    @include mixins.tablet_landscape {
         font-size: 0.9rem;
         margin-left: 2em;
         text-align: left;
     }
-    @include desktop {
+    @include mixins.desktop {
         font-size: 1rem;
         margin-left: 3em;
         text-align: left;

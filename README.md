@@ -1,6 +1,6 @@
 <h1 align="center">Coding Bootcamp testimonials slider</h1>
 
-![preview](./preview.png)
+![preview](./preview.jpg)
 
 <h3 align="center"><a href="https://ann-dev.github.io/fem-testimonials-slider/" target="_blank">✨ Live Demo</a></h3>
 
@@ -22,16 +22,16 @@ npm install
 
 ### Usage
 
-To run the app use:
+To run the app with compiled styles:
 
 ```sh
-npm run start
+npm run dev
 ```
 
-For compiling SCSS (live) use:
+To compile styles:
 
 ```sh
-npm watch:scss
+npm run build
 ```
 
 ### Credits
