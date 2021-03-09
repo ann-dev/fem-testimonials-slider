@@ -1,6 +1,6 @@
 <h1 align="center">Coding Bootcamp testimonials slider</h1>
 
-![preview](./preview.png)
+![preview](./preview.jpg)
 
 <h3 align="center"><a href="https://ann-dev.github.io/fem-testimonials-slider/" target="_blank">✨ Live Demo</a></h3>
 
