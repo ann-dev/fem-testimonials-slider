@@ -22,16 +22,16 @@ npm install
 
 ### Usage
 
-To run the app use:
+To run the app with compiled styles:
 
 ```sh
-npm run start
+npm run dev
 ```
 
-For compiling SCSS (live) use:
+To compile styles:
 
 ```sh
-npm watch:scss
+npm run build
 ```
 
 ### Credits
