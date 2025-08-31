@@ -1,4 +1,4 @@
-@import "../mixins";
+@use "../mixins";
 
 .slider {
   margin: auto;
@@ -7,7 +7,7 @@
 .slider_content {
   margin-top: 3.3rem;
   position: relative;
-  @include desktop {
+  @include mixins.desktop {
     margin: 0;
   }
 }
@@ -27,37 +27,37 @@
     left: 0;
     bottom: 0;
     width: 16rem;
-    @include tablet_portrait {
+    @include mixins.tablet_portrait {
       width: 22rem;
     }
-    @include tablet_landscape {
+    @include mixins.tablet_landscape {
       width: 22rem;
     }
-    @include desktop {
+    @include mixins.desktop {
       border-radius: 5px;
       box-shadow: 0 37px 41px -15px #c5c3d8;
       left: .65rem;
       width: 33.75rem;
     }
   }
-  @include phone_landscape {
+  @include mixins.phone_landscape {
     display: inline-block;
     left: auto;
     margin-top: 0;
     width: 16rem;
   }
-  @include tablet_portrait {
+  @include mixins.tablet_portrait {
     left: calc((100vw - 22rem) / 2);
     margin: 6rem auto 0;
     width: 22rem;
   }
-  @include tablet_landscape {
+  @include mixins.tablet_landscape {
     display: inline-block;
     left: 55%;
     margin-top: 15%;
     width: 22rem;
   }
-  @include desktop {
+  @include mixins.desktop {
     display: inline-block;
     left: 37rem;
     top: 2.6rem;
@@ -69,15 +69,15 @@
   bottom: -1.2rem;
   position: absolute;
   width: 100%;
-  @include phone_landscape {
+  @include mixins.phone_landscape {
     left: 2rem;
     text-align: left;
   }
-  @include tablet_landscape {
+  @include mixins.tablet_landscape {
     left: 2.5rem;
     text-align: left;
   }
-  @include desktop {
+  @include mixins.desktop {
     bottom: -1.7rem;
     left: 4.2rem;
     text-align: left;
@@ -94,21 +94,21 @@
     img {
       width: 75%;
     }
-    @include tablet_portrait {
+    @include mixins.tablet_portrait {
       padding-bottom: 1rem;
       padding-top: 1rem;
       img {
         width: 90%;
       }
     }
-    @include tablet_landscape {
+    @include mixins.tablet_landscape {
       padding-bottom: 1rem;
       padding-top: 1rem;
       img {
         width: 90%;
       }
     }
-    @include desktop {
+    @include mixins.desktop {
       padding-bottom: 1.1rem;
       padding-top: 1.1rem;
       img {
@@ -126,15 +126,15 @@
   border-top-left-radius: 30px;
   padding-left: .8rem;
   padding-right: .9rem;
-  @include tablet_portrait {
+  @include mixins.tablet_portrait {
     padding-left: 1rem;
     padding-right: 1.2rem;
   }
-  @include tablet_landscape {
+  @include mixins.tablet_landscape {
     padding-left: 1rem;
     padding-right: 1.2rem;
   }
-  @include desktop {
+  @include mixins.desktop {
     padding-left: 1.3rem;
     padding-right: 1.5rem;
   }
@@ -145,15 +145,15 @@
   border-top-right-radius: 30px;
   padding-left: .9rem;
   padding-right: .8rem;
-  @include tablet_portrait {
+  @include mixins.tablet_portrait {
     padding-left: 1.2rem;
     padding-right: 1rem;
   }
-  @include tablet_landscape {
+  @include mixins.tablet_landscape {
     padding-left: 1.2rem;
     padding-right: 1rem;
   }
-  @include desktop {
+  @include mixins.desktop {
     padding-left: 1.5rem;
     padding-right: 1.3rem;
   }
@@ -173,22 +173,22 @@
   top: -2rem;
   width: 21rem;
   z-index: -1;
-  @include phone_landscape {
+  @include mixins.phone_landscape {
     left: 45%;
   }
-  @include tablet_portrait {
+  @include mixins.tablet_portrait {
     left: calc((100vw - 29rem) / 2);
     top: 3rem;
     width: 29rem;
   }
-  @include tablet_landscape {
+  @include mixins.tablet_landscape {
     left: 18rem;
     margin: 0 auto;
     top: 7rem;
     right: -12rem;
     width: 29rem;
   }
-  @include desktop {
+  @include mixins.desktop {
     left: 33rem;
     top: -1.8rem;
     width: 44rem;
@@ -198,17 +198,17 @@
 .slider_placeholder {
   height: 19rem;
   width: 16rem;
-  @include phone_landscape {
+  @include mixins.phone_landscape {
     display: none;
   }
-  @include tablet_portrait {
+  @include mixins.tablet_portrait {
     height: 33rem;
     width: 29rem;
   }
-  @include tablet_landscape {
+  @include mixins.tablet_landscape {
     display: none;
   }
-  @include desktop {
+  @include mixins.desktop {
     height: 12rem;
   }
 }

@@ -1,12 +1,18 @@
 {
   "name": "testimonials-slider",
-  "version": "1.0.0",
-  "description": "Testimonials slider, part of frontendmentor challenge series",
-  "main": "index.js",
-  "scripts": {
-    "build:scss": "node-sass --output-style compressed -o dist/styles src/styles",
-    "start": "browser-sync -s -f './index.html, dist/**/*, src/**/*'",
-    "watch:scss": "onchange -i -v 'src/styles/**/*' -- npm run build:scss"
+  "version": "1.1.0",
+  "description": "Testimonials slider - Frontendmentor challenge",
+  "main": "index.js"
+,  "scripts": {
+    "sass": "sass src/styles/index.scss dist/styles/index.css",
+    "sass:watch": "sass --watch src/styles/index.scss dist/styles/index.css",
+    "sass:build": "sass --style=compressed src/styles/index.scss dist/styles/index.min.css",
+    "sass:dev": "sass --watch src/styles/index.scss dist/styles/index.css --style=expanded",
+    "prettier": "prettier --write .",
+    "prettier:check": "prettier --check .",
+    "browser-sync": "browser-sync start --server --files '*.html, dist/styles/*.css, src/styles/**/*.scss' --no-notify",
+    "dev": "concurrently \"npm run sass:dev\" \"npm run browser-sync\"",
+    "build": "npm run sass:build"
   },
   "repository": {
     "type": "git",
@@ -24,17 +30,19 @@
   "homepage": "https://github.com/ann-dev/frontend-mentor-challenges#readme",
   "dependencies": {},
   "devDependencies": {
-    "browser-sync": "^2.26.12",
-    "eslint": "^7.2.0",
-    "eslint-config-airbnb": "^18.2.0",
-    "eslint-config-prettier": "^6.11.0",
-    "eslint-plugin-import": "^2.22.0",
-    "eslint-plugin-jsx-a11y": "^6.3.1",
-    "eslint-plugin-prettier": "^3.1.4",
-    "eslint-plugin-react": "^7.20.5",
-    "eslint-plugin-react-hooks": "^4.0.0",
-    "node-sass": "^4.14.1",
-    "onchange": "^7.0.2",
-    "prettier": "^2.0.5"
+    "browser-sync": "^3.0.4",
+    "concurrently": "^9.2.1",
+    "eslint": "^9.17.0",
+    "eslint-config-airbnb": "^19.0.4",
+    "eslint-config-prettier": "^9.1.0",
+    "eslint-plugin-import": "^2.29.1",
+    "eslint-plugin-jsx-a11y": "^6.8.0",
+    "eslint-plugin-prettier": "^5.1.3",
+    "eslint-plugin-react": "^7.34.1",
+    "eslint-plugin-react-hooks": "^4.6.0",
+    "onchange": "^8.0.0",
+    "prettier": "^3.3.3",
+    "sass": "^1.91.0",
+    "sass-rem": "^4.0.0"
   }
 }
